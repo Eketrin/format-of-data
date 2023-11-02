@@ -16,7 +16,8 @@ namespace format_of_data
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Дата в американском формате: ММ-ДД-ГГГГ");
+            Console.WriteLine("Американский формат: ММ-ДД-ГГГГ");
+            Console.WriteLine("Европейский формат: ДД-ММ-ГГГГ\n");
             string[] values = { "01-05-2019", "10-23-3265", "3216-32-02", "62-65-82", "0-0-0", "01-01-0000", "1-2-3" }; 
             foreach (var item in values)
             {
@@ -27,7 +28,7 @@ namespace format_of_data
                 }
                 else
                 {
-                    Console.WriteLine($"У вас неправильный формат, уберите лишние знаки и пропишите год полностью {item}");
+                    Console.WriteLine($"У вас неправильный формат: {item}");
                 }
             }
             Console.ReadLine();
