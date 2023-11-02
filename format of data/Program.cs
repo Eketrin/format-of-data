@@ -30,7 +30,7 @@ namespace format_of_data
                 {
                     Console.WriteLine($"У вас неправильный формат: {item}");
                 }
-            }//
+            }////////
             Console.ReadLine();
         }
     }
